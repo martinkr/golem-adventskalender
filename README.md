@@ -1,6 +1,6 @@
 # GOLEM ADVENTSKALENDER
 
-Herzlich willkommen zum GitHub Repository des GOLEM Adventskalenders 2024. Hier findet ihr den Quellcode zum Hand-on Tutorial! Hier findet ihr zum Beispiel den [Datenbank Export]([Datenbank Export](https://github.com/martinkr/golem-adventskalender/blob/main/database.json)).
+Herzlich willkommen zum GitHub Repository des GOLEM Adventskalenders 2024. Hier findet ihr den Quellcode zum Hand-on Tutorial! Hier findet ihr zum Beispiel den [Datenbank Export](https://github.com/martinkr/golem-adventskalender/blob/main/database.json).
 
 ## Beispielseite
 
