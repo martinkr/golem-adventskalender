@@ -1,83 +1,30 @@
-## Example app using MongoDB
+# GOLEM ADVENTSKALENDER
 
-[MongoDB](https://www.mongodb.com/) is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. This example will show you how to connect to and use MongoDB as your backend for your Next.js app.
+Herzlich willkommen zum GitHub Repository des GOLEM Adventskalenders 2024. Hier findet ihr den Quellcode zum Hand-on Tutorial! Hier findet ihr zum Beispiel den [Datenbank Export][https://github.com/martinkr/golem-adventskalender/blob/main/database.json].
 
-If you want to learn more about MongoDB, visit the following pages:
+## Beispielseite
 
-- [MongoDB Atlas](https://mongodb.com/atlas)
-- [MongoDB Documentation](https://docs.mongodb.com/)
+Unter [https://adventskalender-six.vercel.app/](https://adventskalender-six.vercel.app/) könnt Ihr den fertigen Adventskalender, basierend auf dem hier veröffentlichten Quellcode in der Debug-Version (`debug=true`) testen.
 
-## Deploy your own
+## Den Quellcode lokal verwenden
 
-Once you have access to the environment variables you'll need, deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Notwendig sind nur zwei einfache Schritte,
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?project-name=with-mongodb&repository-name=with-mongodb&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-mongodb&integration-ids=oac_jnzmjqM10gllKmSrG0SGrHOH)
+- setzten der Variable `MONGODB_URI` in der Datei `.env.local` (mehr hierzu im Artikel)
+- starten von Next.js im Entwicklungsmodus `bash npm run dev`
 
-## How to use
+Und schon könnt Ihr den Adventskalender unter [http://localhost:3000](http://localhost:3000) lokal testen!
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Links
 
-```bash
-npx create-next-app --example with-mongodb with-mongodb-app
-```
+Im folgenden noch ein paar Links zu den verwendeten Technlologien:
 
-```bash
-yarn create next-app --example with-mongodb with-mongodb-app
-```
+- [React](https://react.dev/) ist eine Library für Benutzeroberflächen, sogenannten Komponenten.
+- [Next.js](https://nextjs.org/) wird von einigen der weltweit größten Unternehmen verwendet und ermöglicht die Erstellung hochwertiger Webanwendungen mit der Leistung von React-Komponenten.
+- [TailwindCSS](https://tailwindcss.com/) ist ein Utility-First-CSS-Framework mit vielen Klassen wie `flex`, `pt-4`, `text-center` und `rotate-90`, die so zusammengesetzt werden können, dass direkt im Markup beliebige Designs erstellt werden.
 
-```bash
-pnpm create next-app --example with-mongodb with-mongodb-app
-```
+- [MongoDB](https://www.mongodb.com/) ist eine universelle, dokumentenbasierte, verteilte Datenbank, die für moderne Anwendungsentwickler und das Cloud-Zeitalter entwickelt wurde.
 
-## Configuration
+## Über den Autor
 
-### Set up a MongoDB database
-
-Set up a MongoDB database either locally or with [MongoDB Atlas for free](https://mongodb.com/atlas).
-
-### Set up environment variables
-
-Copy the `env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
-
-```bash
-cp .env.local.example .env.local
-```
-
-Set each variable on `.env.local`:
-
-- `MONGODB_URI` - Your MongoDB connection string. If you are using [MongoDB Atlas](https://mongodb.com/atlas) you can find this by clicking the "Connect" button for your cluster.
-
-### Run Next.js in development mode
-
-```bash
-npm install
-npm run dev
-
-# or
-
-yarn install
-yarn dev
-```
-
-Your app should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
-
-You will either see a message stating "You are connected to MongoDB" or "You are NOT connected to MongoDB". Ensure that you have provided the correct `MONGODB_URI` environment variable.
-
-When you are successfully connected, you can refer to the [MongoDB Node.js Driver docs](https://mongodb.github.io/node-mongodb-native/3.4/tutorials/collections/) for further instructions on how to query your database.
-
-## Deploy on Vercel
-
-You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-#### Deploy Your Local Project
-
-To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket and [import to Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example).
-
-**Important**: When you import your project on Vercel, make sure to click on **Environment Variables** and set them to match your `.env.local` file.
-
-#### Deploy from Our Template
-
-Alternatively, you can deploy using our template by clicking on the Deploy button below.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?project-name=with-mongodb&repository-name=with-mongodb&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-mongodb&integration-ids=oac_jnzmjqM10gllKmSrG0SGrHOH)
-# adventskalender
+[Martin Krause](https://www.linkedin.com/in/mkrause) entwickelt seit über 20 Jahren Webseiten. Er war unter anderem bei Razorfish, Sapient, Publicis und BORN als Engineering Manager, Frontend-Architekt und Mentor tätig und arbeitet zur Zeit als freiberuflicher Solution Architekt und Remote Consultant mit den Schwerpunkten Full Stack, Frontend und Headless. Vor Kurzem veröffentlichte er bei [No Starch Press](https://nostarch.com/complete-developer) das Buch [The Complete Developer – Master the Full Stack with TypeScript, React, Next.js, MongoDB, and Docker](https://www.amazon.de/-/en/Martin-Krause/dp/1718503288/). Als professioneller Taucher verbringt er seine Freizeit vorzugsweise unter Wasser.
